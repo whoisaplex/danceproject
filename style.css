@@ -1,3 +1,8 @@
+*{
+  padding:0px;
+  margin:0px;
+}
+
 html, body{
   overflow-x: hidden;
 }
@@ -82,11 +87,36 @@ html, body{
   height:300px;
   box-shadow: 0px 3px 7px black;
   color: #eaeaea;
+  /*display:flex;
+  justify-content: center;
+  align-items: center;*/
+  text-align: center;
+  overflow: hidden;
+
+}
+
+.box:hover > .filler{
+  transform: translateY(-100%);
+}
+.box:hover > .main_text_image{
+  transform: translateY(-100%);
+}
+
+
+.filler{
+  width:100%;
+  height:100%;
   display:flex;
   justify-content: center;
   align-items: center;
+  background:rgba(33, 37, 41, 0.95);
+  transition: all .4s;
+  font-size: 1.2em;
   text-align: center;
+  padding:15px;
+
 }
+
 .workout{
   background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/boxbg3.jpeg');
   background-position: center;
@@ -105,8 +135,17 @@ html, body{
   background-repeat: no-repeat;
   background-size: cover;
 }
-.box h3{
+.main_text_image{
+  width:100%;
+  height:100%;
   font-size:40px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lato';
+  font-weight: bold;
+  color:white;
+  transition: all .4s;
 }
 
 .login-dropdown{
@@ -164,4 +203,43 @@ html, body{
   justify-content: center;
   align-items: center;
   color:#e5dede;
+}
+
+.aboutus{
+  width:100vw;
+  display:flex;
+  flex-direction: column;
+  background:#a32034;
+  justify-content: center;
+  align-items: center;
+  color:#e5dede;
+}
+
+.aboutus h1{
+  padding:50px;
+}
+
+.aboutus h4{
+  padding:20px;
+  padding-bottom:50px;
+  text-align: center;
+  width:50%;
+}
+
+.footer{
+  width:100vw;
+  background:#141414;
+  display:flex;
+  justify-content: center;
+  font-size:2.5em;
+}
+
+.footer i{
+  cursor:pointer;
+  color:#e5dede;
+  padding:15px 20px;
+  transition: all .3s;
+}
+.footer i:hover{
+  color:#a32034;
 }
