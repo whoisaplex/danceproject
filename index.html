@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div id="login-container" class="login-dropdown" style="display:none">
+      <div class="login-container">
+        <i id="close-window" class="fas fa-times closing-cross"></i>
+        <h2 class="login-text">Sway Login</h2>
+        <div id="error" class="error_msg"><h4>Login failed: Wrong Username or Password!</h4></div>
+        <input id="username" type="text" placeholder="Username">
+        <input id="password" type="password" placeholder="Password">
+        <button id="login">LOGIN</button>
+      </div>
+    </div>
+
+    <header class="header-container">
+      <h1 class="header-logo">Sway</h1>
+      <button id="show-login" class="login-button">LOGIN</button>
+    </header>
+    <div class="container-fluid">
+      <div>
+        <h1 class="main-text">Sway</h1>
+        <h2 class="second-text">Dance like you've never danced before</h2>
+      </div>
+    </div>
+    <div class="undersection">
+      <div class="box workout"><h3>Workout</h3></div>
+      <div class="box street"><h3>Street</h3></div>
+      <div class="box team"><h3>Team</h3></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
