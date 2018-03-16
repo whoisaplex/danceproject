@@ -8,7 +8,7 @@ $(document).ready(() => {
     const inUsername = $('#username').val();
     const inPassword = $('#password').val();
     if(inUsername === username && inPassword === password){
-      window.location.replace('');
+      window.location.replace('../danceproject/profilePage/index.html');
     }else{
       $('#error').css({'display' : 'flex'});
     }
