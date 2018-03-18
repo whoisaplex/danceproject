@@ -51,7 +51,6 @@
 
 .classes{
   width:100%;
-  height:100px;
   display:flex;
   justify-content: center;
   margin-top:100px;
@@ -61,29 +60,39 @@
 
 .class_container{
   width:80%;
+  height:auto;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.boxbox{
+  width:400px;
+  display:flex;
+  height:150px;
+  border-radius: 9px 9px 9px 9px;
+  box-shadow: 0px 3px 2px #727272;
+  margin: 10px;
+}
+
+.boxbox_color{
+  width:10px;
+  height:100%;
+  background:rgb(43, 109, 209);
+  border-radius: 9px 0px 0px 9px;
+}
+
+.boxbox_content{
   display:flex;
   flex-direction: column;
+  justify-content: center;
+  width: calc(100% - 10px);
+  height:100%;
+  background:#fdfdfd;
+  border-radius: 0px 9px 9px 0px;
 }
 
-.class_box{
-  display:flex;
-  width:100%;
-  padding:75px 0px;
-  color:#e5dede;
+.boxbox_content h3{
+  padding:5px 10px;
   font-weight: bold;
-  font-size:1.3em;
-  /*background:rgba(186, 186, 186, .8);*/
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/boxbg2.jpeg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: center;
-  cursor:pointer;
-  border-radius: 7px;
-  margin: 10px 0px;
-  box-shadow: 0px 3px 2px #727272;
-}
-
-.class_box h3{
-  margin-left:20px;
 }
