@@ -98,7 +98,7 @@
   font-weight: bold;
 }
 
-.boxbox_content h3:nth-child(2), .boxbox_content h3:nth-child(3){
+.boxbox_content h3:nth-child(2), .boxbox_content h3:nth-child(3),  .boxbox_content h3:nth-child(4){
   font-size: 1em;
   color:#635e5e;
 }
