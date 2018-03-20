@@ -209,7 +209,11 @@ html, body{
   width:100vw;
   display:flex;
   flex-direction: column;
-  background:#a32034;
+  /*background:#a32034;*/
+  background:linear-gradient(rgba(163, 32, 52, .8), rgba(163, 32, 52, .8)), url('images/blur.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   justify-content: center;
   align-items: center;
   color:#e5dede;
