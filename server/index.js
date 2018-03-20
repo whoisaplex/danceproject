@@ -57,6 +57,7 @@ const capitalize = function (string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
 
+//Login authentification
 function loginAuth(data){
   let auth = false;
   students.forEach(student => {
@@ -71,9 +72,18 @@ function loginAuth(data){
   });
   return auth;
 }
-// todo: functions to return number of students of a class, which dates a student/teacher has depending on classes
 
-
+function countStudents(_class){
+  let count = 0;
+  students.forEach(student => {
+    student.classes.forEach(tempClass => {
+      if(tempClass === _class){
+        count++;
+      }
+    });
+  });
+  return count;
+}
   let res;
 
 
@@ -95,6 +105,11 @@ app.post('/loginAuth', function (req, res) {
   }else{
     res.json(false);
   }
+});
+
+app.post('/getStudentCount', function (req, res) {
+  const number = countStudents(req.body.class);
+  res.json(number);
 });
 
 
